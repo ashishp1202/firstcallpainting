@@ -1,0 +1,111 @@
+---
+title: 'Contact | Pro Plaster and Paint'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'contact/'
+eleventyNavigation:
+    key: Contact Us
+    order: 600
+    hideOnDesktop: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Contact Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/contact-banner.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/contact-banner.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/contact-banner.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <form id="cs-form" name="contact" method="POST" netlify>
+                <div class="cs-content">
+                    <span class="cs-topper">Contact</span>
+                    <h2 class="cs-title">Get in Touch</h2>
+                    <p class="cs-text">
+                        Contact us today to schedule a consultation and experience the First Call painting difference for yourself.
+                    </p>
+                </div>
+                <label>
+                    Name
+                    <input required type="text" id="name" name="name" placeholder="Your Name">
+                </label>
+                <label>
+                    Phone
+                    <input required type="text" id="phone" name="phone" placeholder="Your Phone">
+                </label>
+                <label>
+                    Email
+                    <input required type="text" id="email" name="email" placeholder="Your Email">
+                </label>                
+                <label>
+                    Project Postcode
+                    <input type="text" id="find" name="find-us" placeholder="Your Project Postcode">
+                </label>
+                <label>
+                    What type of project is it?
+                    <select>
+                        <option>Residential</option>
+                        <option>Commercial</option>
+                    </select>
+                </label>
+                <label>
+                    Please attach floor plans/images
+                    <input type="file" id="file" name="file"/>
+                </label>
+               
+                <label class="cs-label-message">
+                    Message
+                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">Submit Message</button>
+            </form>
+            <div class="cs-right-section">
+                <!--Email-->
+                <span class="cs-header">Email</span>
+                <a class="cs-link" href="mailto:dmitri@firstcallpainting.co.uk">dmitri@firstcallpainting.co.uk</a>
+                <!--Phone-->
+                <span class="cs-header">Phone/WhatsApp</span>
+                <a class="cs-link" href="tel:+447436487098">+44 7436 487098</a>
+                <!--Address-->
+                <!-- <span class="cs-header">Address</span>
+                <a class="cs-link" href="{{client.address.mapLink}}">
+                    {{client.address.lineOne}},
+                    <br/>
+                    {{client.address.lineTwo}},
+                    <br/>
+                    <span class="cs-block">
+                        {{client.address.city}}
+                        {{client.address.state}}
+                        {{client.address.zip}}
+                    </span>
+                </a> -->
+
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <source media="(min-width: 601px)" srcset="/assets/images/inner-banner.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/inner-banner.jpg" alt="building" loading="lazy" width="2500" height="1667">
+                </picture>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
