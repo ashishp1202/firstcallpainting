@@ -1,138 +1,232 @@
 ---
-title: 'About Us | Painter in Amersham'
-description: 'Painter in Amersham and the surrounding area. We provide Painting and Decorating services in London. Contact us now for a free quote.'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'about/'
+title: "About Us | Painter in Amersham"
+description: "Painter in Amersham and the surrounding area. We provide Painting and Decorating services in London. Contact us now for a free quote."
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "about/"
 eleventyNavigation:
-    key: About Us
-    order: 200
+  key: About Us
+  order: 200
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/about.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-{% endblock %}
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/inner-banner.jpg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/inner-banner.jpg"
+    />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/inner-banner.jpg"
+      alt="paint and plaster"
+      loading="eager"
+      width="2500"
+      height="1667"
+    />
+  </picture>
+</section>
 
-{% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/inner-banner.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/inner-banner.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/inner-banner.jpg" alt="paint and plaster" loading="eager" width="2500" height="1667">
-        </picture>
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/about-img2.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/about-img2.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/about-img2.jpg"
+          alt="cabinets"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/about-img1.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/about-img1.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/about-img1.jpg"
+          alt="house"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">At Firstcall Painting</h2>
+      <p class="cs-text">
+        we pride ourselves on being a reliable and trustworthy painting and
+        decorating company that sets itself apart. Our team of skilled
+        professionals is dedicated to providing exceptional results, using only
+        top-quality materials and advanced techniques to ensure a flawless
+        finish.
+      </p>
+      <p class="cs-text">
+        Our unwavering commitment to professionalism, honesty, and quality is
+        what distinguishes us, and it’s this dedication that has earned us a
+        reputation for excellence within the industry.
+      </p>
+    </div>
+  </div>
+</section>
 
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/about-img2.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/about-img2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/about-img2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/about-img1.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/about-img1.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/about-img1.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">At Firstcall Painting</h2>
-                <p class="cs-text">
-                    we pride ourselves on being a reliable and trustworthy painting and decorating company that sets itself apart. Our team of skilled professionals is dedicated to providing exceptional results, using only top-quality materials and advanced techniques to ensure a flawless finish.
-                </p>
-                <p class="cs-text">
-                    Our unwavering commitment to professionalism, honesty, and quality is what distinguishes us, and it’s this dedication that has earned us a reputation for excellence within the industry.
-                </p>
-               
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
+<!-- ============================================ -->
 <!--                Our Values                -->
 <!-- ============================================ -->
 
 <section id="why-choose-1730">
-    <div class="cs-container">
-        <div class="cs-content">
-            <!-- <span class="cs-topper">Services</span> -->
-            <h2 class="cs-title">Our Values</h2>
-            <p>We take pride in the core values that shape every aspect of our work:</p>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-house.svg" alt="icon" width="32" height="32">
-                </picture>
-                <div class="cs-flex">
-                    <h3 class="cs-h3">Honesty and Transparency</h3>
-                    <p class="cs-item-text">
-                        We believe that trust is built on honesty, which is why we’re transparent from the initial quote to the final walkthrough. You’ll always be informed about the progress of your project, ensuring there are no surprises along the way.
-                    </p>
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-layer.svg" alt="icon" width="72" height="72">
-                </picture>
-                <div class="cs-flex">
-                    <h3 class="cs-h3">Reliability</h3>
-                    <p class="cs-item-text">
-                        We respect your time and set realistic deadlines to complete each project on schedule and within budget. You can count on us to deliver on our promises.
-                    </p>
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-hour.svg" alt="icon" width="72" height="72">
-                </picture>
-                <div class="cs-flex">
-                    <h3 class="cs-h3">Excellent Communication</h3>
-                    <p class="cs-item-text">
-                        Clear and consistent communication is key to a successful project. We’ll provide regular updates, answer your questions, and make sure your expectations are met at every stage.
-                    </p>
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-flower.svg" alt="icon" width="72" height="72">
-                </picture>
-                <div class="cs-flex">
-                    <h3 class="cs-h3">Attention to Detail</h3>
-                    <p class="cs-item-text">
-                        Our team pays close attention to even the smallest details, ensuring a flawless finish every time. We know it’s the little things that make a difference, and we’re committed to getting them right.
-
-                    </p>
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-flower.svg" alt="icon" width="72" height="72">
-                </picture>
-                <div class="cs-flex">
-                    <h3 class="cs-h3">Respect for Your Property</h3>
-                    <p class="cs-item-text">
-                        We treat every property as if it were our own, ensuring your space is respected throughout the project. When we’re done, your home or business will be left clean and tidy.
-                    </p>
-                </div>
-            </li>
-        </ul>
+  <div class="cs-container">
+    <div class="cs-content">
+      <!-- <span class="cs-topper">Services</span> -->
+      <h2 class="cs-title">Our Values</h2>
+      <p>
+        We take pride in the core values that shape every aspect of our work:
+      </p>
     </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-house.svg"
+            alt="icon"
+            width="32"
+            height="32"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Honesty and Transparency</h3>
+          <p class="cs-item-text">
+            We believe that trust is built on honesty, which is why we’re
+            transparent from the initial quote to the final walkthrough. You’ll
+            always be informed about the progress of your project, ensuring
+            there are no surprises along the way.
+          </p>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-layer.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Reliability</h3>
+          <p class="cs-item-text">
+            We respect your time and set realistic deadlines to complete each
+            project on schedule and within budget. You can count on us to
+            deliver on our promises.
+          </p>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-hour.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Excellent Communication</h3>
+          <p class="cs-item-text">
+            Clear and consistent communication is key to a successful project.
+            We’ll provide regular updates, answer your questions, and make sure
+            your expectations are met at every stage.
+          </p>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-flower.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Attention to Detail</h3>
+          <p class="cs-item-text">
+            Our team pays close attention to even the smallest details, ensuring
+            a flawless finish every time. We know it’s the little things that
+            make a difference, and we’re committed to getting them right.
+          </p>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-flower.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Respect for Your Property</h3>
+          <p class="cs-item-text">
+            We treat every property as if it were our own, ensuring your space
+            is respected throughout the project. When we’re done, your home or
+            business will be left clean and tidy.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <!-- ============================================ -->
@@ -140,84 +234,128 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="why-choose-1313" class="our-approach-sec">
-    <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex-group">
-                <span class="cs-topper">At Firstcall Painting</span>
-                <h2 class="cs-title">Our Approach</h2>
-            </div>
-            <p class="cs-text">
-                we offer a personalised experience tailored to each client’s needs. We take the time to understand your vision, ensuring that our work reflects your unique preferences. We’re not just painters – we’re artisans who take pride in our craft.
-            </p>
-        </div>
-        <div class="cs-flex">
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <h3 class="cs-h3">What You Can Expect</h3>
-                    <ul class="what-expect-list">
-                    <li class="cs-li-text">A detailed consultation to capture your vision and requirements
-                    </li>
-                    <li class="cs-li-text">A comprehensive quote outlining the project scope, timeline, and costs – all of which we adhere to
-                    </li>
-                    <li class="cs-li-text">A dedicated team of professionals committed to delivering outstanding results
-                    </li>
-                    <li class="cs-li-text">Regular updates on project progress
-                    </li>
-                    <li class="cs-li-text">A final walkthrough to ensure your satisfaction before we consider the job complete
-                    </li>
-                    </ul>
-                </li>
-               
-            </ul>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/aproach-img1.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/aproach-img1.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/aproach-img1.jpg" alt="meeting" width="413" height="400">
-                </picture>
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/aproach-img2.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/aproach-img2.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/aproach-img2.jpg" alt="meeting" width="413" height="400">
-                </picture>
-            </div>
-        </div>
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex-group">
+        <span class="cs-topper">At Firstcall Painting</span>
+        <h2 class="cs-title">Our Approach</h2>
+      </div>
+      <p class="cs-text">
+        we offer a personalised experience tailored to each client’s needs. We
+        take the time to understand your vision, ensuring that our work reflects
+        your unique preferences. We’re not just painters – we’re artisans who
+        take pride in our craft.
+      </p>
     </div>
+    <div class="cs-flex">
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <h3 class="cs-h3">What You Can Expect</h3>
+          <ul class="what-expect-list">
+            <li class="cs-li-text">
+              A detailed consultation to capture your vision and requirements
+            </li>
+            <li class="cs-li-text">
+              A comprehensive quote outlining the project scope, timeline, and
+              costs – all of which we adhere to
+            </li>
+            <li class="cs-li-text">
+              A dedicated team of professionals committed to delivering
+              outstanding results
+            </li>
+            <li class="cs-li-text">Regular updates on project progress</li>
+            <li class="cs-li-text">
+              A final walkthrough to ensure your satisfaction before we consider
+              the job complete
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="cs-image-group">
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/interior-service-img13.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/interior-service-img13.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/interior-service-img13.webp"
+            alt="meeting"
+            width="413"
+            height="400"
+          />
+        </picture>
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/interior-service-img23.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/interior-service-img23.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/interior-service-img23.webp"
+            alt="meeting"
+            width="413"
+            height="400"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
 </section>
-
 
 <!-- ============================================ -->
 <!--                  Why Choose                  -->
 <!-- ============================================ -->
 
 <section id="why-choose-37">
-    <div class="cs-container">
-        <!-- Right Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/why-choose.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/why-choose.jpg">
-            <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/why-choose.jpg" alt="Firstcall Painting" width="858" height="781">
-        </picture>
-        <div class="cs-content">
-            <!-- <span class="cs-topper">Why Choose Us</span> -->
-            <h2 class="cs-title">Why Choose Us</h2>
-            <p class="cs-text">
-                At Firstcall Painting, we’re passionate about delivering remarkable results and exceptional customer service.
-            </p>
-            
-            
-            <a href="https://firstcallpainting.co.uk/contact" class="cs-button-solid">Request A Quote Today</a>
-        </div>
+  <div class="cs-container">
+    <!-- Right Image -->
+    <picture class="cs-picture">
+      <source
+        media="(max-width: 600px)"
+        srcset="/assets/images/interior-service-img17.webp"
+      />
+      <source
+        media="(min-width: 601px)"
+        srcset="/assets/images/interior-service-img17.webp"
+      />
+      <img
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        src="/assets/images/interior-service-img17.webp"
+        alt="Firstcall Painting"
+        width="858"
+        height="781"
+      />
+    </picture>
+    <div class="cs-content">
+      <!-- <span class="cs-topper">Why Choose Us</span> -->
+      <h2 class="cs-title">Why Choose Us</h2>
+      <p class="cs-text">
+        At Firstcall Painting, we’re passionate about delivering remarkable
+        results and exceptional customer service.
+      </p>
+
+      <a href="https://firstcallpainting.co.uk/contact" class="cs-button-solid"
+        >Request A Quote Today</a
+      >
     </div>
+  </div>
 </section>
-                                
-                                
-                                
 
-    {% include 'components/cta.html' %}
-
-{% endblock %}
+{% include 'components/cta.html' %} {% endblock %}

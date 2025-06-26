@@ -1,49 +1,44 @@
 ---
-title: 'Painter in Amersham - Firstcall Painting'
-description: 'Painter in Amersham and the surrounding area. We provide Painting and Decorating services in London. Contact us now for a free quote.'
-preloadImg: '/assets/images/landing.jpg'
-permalink: '/'
-tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
+title: "Painter in Amersham - Firstcall Painting"
+description: "Painter in Amersham and the surrounding area. We provide Painting and Decorating services in London. Contact us now for a free quote."
+preloadImg: "/assets/images/landing.jpg"
+permalink: "/"
+tags: "sitemap" # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
   key: Home
   order: 100
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css"/>
-    <link rel="stylesheet" href="/assets/css/critical.css"/>
-
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
-{% endblock %}
-
-{% block body %}
+<!-- Script for Netlify Identity -->
+<script
+  defer
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{% endblock %} {% block body %}
 
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
 <section id="hero-1618">
-    <div class="cs-container">
-        <div class="cs-content">
-            <!-- <span class="cs-topper">
+  <div class="cs-container">
+    <div class="cs-content">
+      <!-- <span class="cs-topper">
                 <svg class="cs-chevron" width="49" height="15" viewBox="0 0 49 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.7">
                     <path d="M0.621948 7.49889L6.40262 15L10.343 15L4.56231 7.49889L10.343 -4.2492e-07L6.40262 -2.52681e-07L0.621948 7.49889Z" fill="var(--chevronColor)"/>
@@ -66,257 +61,418 @@ eleventyNavigation:
                     </g>
                 </svg>
             </span> -->
-            <h1 class="cs-title">Residential and Commercial Painting and Decorating Services in London</h1>
-            <p class="cs-text">Drawing from extensive industry experience, we have built a strong reputation for reliability, efficiency, and a commitment to delivering exceptional quality.</p>
-            <a href="/contact" class="cs-button-solid">Request a quote online today.</a>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="48" height="48">
-                <h3 class="cs-h3">Interior & Exterior Painting</h3>
-                <p class="cs-item-text">
-                    At Firstcall Painting, we offer top-notch interior and exterior painting services tailored to your needs. Whether you're refreshing the inside of your home or giving the outside a new look, our skilled team ensures a flawless finish that enhances the beauty and value of your property.
-
-
-                </p>
-            </li>
-            <li class="cs-item">
-                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/speedometer.svg" alt="icon" width="48" height="48">
-                <h3 class="cs-h3">Commercial</h3>
-                <p class="cs-item-text">
-                    We specialise in commercial painting services, understanding the demands of large-scale projects. Our experienced team works efficiently to minimise disruption to your business while delivering high-quality results that align with your professional image and operational standards
-
-
-                </p>
-            </li>
-            <li class="cs-item">
-                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg" alt="icon" width="48" height="48">
-                <h3 class="cs-h3">Spraypainting</h3>
-                <p class="cs-item-text">
-                    Our spray painting services provide a fast, efficient solution for achieving a smooth, even finish. Ideal for both residential and commercial projects, we use advanced spray techniques and equipment to ensure an immaculate, long-lasting result with minimal downtime.
-                </p>
-            </li>
-            <li class="cs-item">
-                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg" alt="icon" width="48" height="48">
-                <h3 class="cs-h3">PVC</h3>
-                <p class="cs-item-text">
-                    At Firstcall Painting, we offer specialised painting services for PVC surfaces. Our experienced team understands the unique requirements of PVC, delivering durable finishes that enhance the appearance and longevity of windows, doors, and other PVC components.
-                </p>
-            </li>
-            <li class="cs-item">
-                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg" alt="icon" width="48" height="48">
-                <h3 class="cs-h3">Cladding</h3>
-                <p class="cs-item-text">
-                    Our professional cladding painting services are designed to rejuvenate and protect your building’s exterior. Using high-quality, weather-resistant materials, we ensure your cladding not only looks great but also offers long-lasting protection against the elements.
-                </p>
-            </li>
-        </ul>
+      <h1 class="cs-title">
+        Residential and Commercial Painting and Decorating Services in London
+      </h1>
+      <p class="cs-text">
+        Drawing from extensive industry experience, we have built a strong
+        reputation for reliability, efficiency, and a commitment to delivering
+        exceptional quality.
+      </p>
+      <a href="/contact" class="cs-button-solid"
+        >Request a quote online today.</a
+      >
     </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">Interior & Exterior Painting</h3>
+        <p class="cs-item-text">
+          At Firstcall Painting, we offer top-notch interior and exterior
+          painting services tailored to your needs. Whether you're refreshing
+          the inside of your home or giving the outside a new look, our skilled
+          team ensures a flawless finish that enhances the beauty and value of
+          your property.
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/speedometer.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">Commercial</h3>
+        <p class="cs-item-text">
+          We specialise in commercial painting services, understanding the
+          demands of large-scale projects. Our experienced team works
+          efficiently to minimise disruption to your business while delivering
+          high-quality results that align with your professional image and
+          operational standards
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">Spraypainting</h3>
+        <p class="cs-item-text">
+          Our spray painting services provide a fast, efficient solution for
+          achieving a smooth, even finish. Ideal for both residential and
+          commercial projects, we use advanced spray techniques and equipment to
+          ensure an immaculate, long-lasting result with minimal downtime.
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">PVC</h3>
+        <p class="cs-item-text">
+          At Firstcall Painting, we offer specialised painting services for PVC
+          surfaces. Our experienced team understands the unique requirements of
+          PVC, delivering durable finishes that enhance the appearance and
+          longevity of windows, doors, and other PVC components.
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">Cladding</h3>
+        <p class="cs-item-text">
+          Our professional cladding painting services are designed to rejuvenate
+          and protect your building’s exterior. Using high-quality,
+          weather-resistant materials, we ensure your cladding not only looks
+          great but also offers long-lasting protection against the elements.
+        </p>
+      </li>
+    </ul>
+  </div>
 
-    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/banner-img1.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/banner-img1.jpg">
-        <img decoding="async" src="/assets/images/banner-img1.jpg" alt="meeting" width="2250" height="1500" aria-hidden="true">
-    </picture>
+  <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/banner-img1.jpg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/banner-img1.jpg"
+    />
+    <img
+      decoding="async"
+      src="/assets/images/banner-img1.jpg"
+      alt="meeting"
+      width="2250"
+      height="1500"
+      aria-hidden="true"
+    />
+  </picture>
 </section>
-                                
-                                
 
-
-
-                                
-
- <!-- ============================================ -->
+<!-- ============================================ -->
 <!--                   Services                   -->
 <!-- ============================================ -->
 
 <section id="services-343">
-    <div class="cs-container">
-        <div class="cs-content">
-            <!-- <span class="cs-topper">Our Services</span> -->
-            <h2 class="cs-title">The Firstcall <br>painting difference</h2>
-            <p class="cs-text">
-                At Firstcall, we take pride in leading the way in industry excellence. Here’s what makes us stand out:
-            </p>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/paint-diff-img1.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/paint-diff-img1.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/paint-diff-img1.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
-                    </picture>
-                    <h3 class="cs-h3">Smooth & Stress-Free Experience</h3>
-                    <p class="cs-item-text">
-                        From the first consultation to the final coat, we’ll walk you through every stage with clear communication and full transparency. No unexpected surprises, no hidden fees.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/paint-diff-img2.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/paint-diff-img2.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/paint-diff-img2.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
-                    </picture>
-                    <h3 class="cs-h3">Superior Craftsmanship</h3>
-                    <p class="cs-item-text">
-                        Our experienced team uses top-tier materials and expert techniques to produce exceptional results that go beyond your expectations.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/paint-diff-img3.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/paint-diff-img3.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/paint-diff-img3.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
-                    </picture>
-                    <h3 class="cs-h3">Fast & Efficient Service</h3>
-                    <p class="cs-item-text">
-                        We know your time is important, so we focus on completing projects swiftly without sacrificing quality or attention to detail.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/paint-diff-img4.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/paint-diff-img4.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/paint-diff-img4.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
-                    </picture>
-                    <h3 class="cs-h3">Comprehensive Insurance & Protection</h3>
-                    <p class="cs-item-text">
-                        Your project is our priority. With full insurance coverage, you can feel confident knowing your property is in safe hands.
-                    </p>
-                </a>
-            </li>
-        </ul>
+  <div class="cs-container">
+    <div class="cs-content">
+      <!-- <span class="cs-topper">Our Services</span> -->
+      <h2 class="cs-title">The Firstcall <br />painting difference</h2>
+      <p class="cs-text">
+        At Firstcall, we take pride in leading the way in industry excellence.
+        Here’s what makes us stand out:
+      </p>
     </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <picture class="cs-picture">
+            <source
+              media="(max-width: 600px)"
+              srcset="/assets/images/interior-service-img12.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="/assets/images/interior-service-img12.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/interior-service-img12.webp"
+              alt="cleaner"
+              width="413"
+              height="240"
+              aria-hidden="true"
+            />
+          </picture>
+          <h3 class="cs-h3">Smooth & Stress-Free Experience</h3>
+          <p class="cs-item-text">
+            From the first consultation to the final coat, we’ll walk you
+            through every stage with clear communication and full transparency.
+            No unexpected surprises, no hidden fees.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <picture class="cs-picture">
+            <source
+              media="(max-width: 600px)"
+              srcset="/assets/images/interior-service-img16.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="/assets/images/interior-service-img16.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/interior-service-img16.webp"
+              alt="cleaner"
+              width="413"
+              height="240"
+              aria-hidden="true"
+            />
+          </picture>
+          <h3 class="cs-h3">Superior Craftsmanship</h3>
+          <p class="cs-item-text">
+            Our experienced team uses top-tier materials and expert techniques
+            to produce exceptional results that go beyond your expectations.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <picture class="cs-picture">
+            <source
+              media="(max-width: 600px)"
+              srcset="/assets/images/interior-service-img15.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="/assets/images/interior-service-img15.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/interior-service-img15.webp"
+              alt="cleaner"
+              width="413"
+              height="240"
+              aria-hidden="true"
+            />
+          </picture>
+          <h3 class="cs-h3">Fast & Efficient Service</h3>
+          <p class="cs-item-text">
+            We know your time is important, so we focus on completing projects
+            swiftly without sacrificing quality or attention to detail.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <picture class="cs-picture">
+            <source
+              media="(max-width: 600px)"
+              srcset="/assets/images/interior-service-img22.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="/assets/images/interior-service-img22.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/interior-service-img22.webp"
+              alt="cleaner"
+              width="413"
+              height="240"
+              aria-hidden="true"
+            />
+          </picture>
+          <h3 class="cs-h3">Comprehensive Insurance & Protection</h3>
+          <p class="cs-item-text">
+            Your project is our priority. With full insurance coverage, you can
+            feel confident knowing your property is in safe hands.
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>
-                                
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/about-img2.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/about-img2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/about-img2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/about-img1.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/about-img1.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/about-img1.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">At Firstcall Painting</h2>
-                <p class="cs-text">
-                    we’re dedicated to forging long-term relationships with our clients by consistently delivering outstanding results, exceptional customer service, and a genuine passion for our craft.
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/about-img2.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/about-img2.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/about-img2.jpg"
+          alt="cabinets"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/about-img1.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/about-img1.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/about-img1.jpg"
+          alt="house"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">At Firstcall Painting</h2>
+      <p class="cs-text">
+        we’re dedicated to forging long-term relationships with our clients by
+        consistently delivering outstanding results, exceptional customer
+        service, and a genuine passion for our craft.
+      </p>
+      <p class="cs-text">
+        With years of industry experience, we've earned a reputation for being
+        reliable, efficient, and committed to the highest standards of quality.
+      </p>
 
-                </p>
-                <p class="cs-text">
-                    With years of industry experience, we've earned a reputation for being reliable, efficient, and committed to the highest standards of quality.
+      <a href="/about" class="cs-button-solid">More About Us</a>
+    </div>
+  </div>
+</section>
 
-                </p>
-               
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
-        </div>
-    </section>
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
 
-  
+<section id="reviews">
+  <div class="cs-container">
+    <span class="cs-topper">Our Reviews</span>
+    <h2 class="cs-title">Words From Our Customers</h2>
+    <p class="cs-text">
+      Dimitri and Daniel completed a first rate redecoration in very quick time
+      to a very high standard. They efficient, were tidy and a pleasure to work
+      with and would definitely use them again.
+    </p>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-p">
+          Dmtri was fantastic, very reasonable price and very quick. Excellent
+          job, can’t fault at all. Even came back to do something extra at no
+          additional cost and to double check everything was completed. Would
+          absolutely recommend.
+        </p>
+        <span class="cs-reviewer">
+          Aisling Ballagh
+          <span class="cs-desc">Homeowner</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-p">
+          Dmitri has completed painting our house in Chelsea. We are extremely
+          pleased with his work and the finish result looks spot on. Dumitru
+          kept us informed during the process and has always been polite and
+          respectful. He looked after our property and kept it clean and tidy
+          during the works. We have planned more work for Dmitri in the next few
+          months. I would definitely recommend him to others
+        </p>
+        <span class="cs-reviewer">
+          Robert Hale
+          <span class="cs-desc">Homeowner</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+    </ul>
+    <!-- <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a> -->
+  </div>
+</section>
 
-  
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Dimitri and Daniel completed a first rate redecoration in very quick time to a very high standard. They efficient, were tidy and a pleasure to work with and would definitely use them again.
-
-
-            </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dmtri was fantastic, very reasonable price and very quick. Excellent job, can’t fault at all. Even came back to do something extra at no additional cost and to double check everything was completed. Would absolutely recommend.
-
-
-                    </p>
-                    <span class="cs-reviewer">
-                        Aisling Ballagh
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dmitri has completed painting our house in Chelsea. We are extremely pleased with his work and the finish result looks spot on. Dumitru kept us informed during the process and has always been polite and respectful. He looked after our property and kept it clean and tidy during the works. We have planned more work for Dmitri in the next few months. I would definitely recommend him to others
-
-
-                    </p>
-                    <span class="cs-reviewer">
-                        Robert Hale
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-            </ul>
-            <!-- <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a> -->
-        </div>
-    </section>
-
-    {% include 'components/cta.html' %}
-{% endblock %}
+{% include 'components/cta.html' %} {% endblock %}

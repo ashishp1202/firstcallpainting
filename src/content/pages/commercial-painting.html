@@ -1,187 +1,307 @@
 ---
-title: 'Commercial Painting | Painter in Amersham'
-description: 'Commercial Painter in Amersham and the surrounding area. We also provide professional plastering services. Contact us now for a free quote.'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'commercial-painting/'
+title: "Commercial Painting | Painter in Amersham"
+description: "Commercial Painter in Amersham and the surrounding area. We also provide professional plastering services. Contact us now for a free quote."
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "commercial-painting/"
 eleventyNavigation:
-    key: Commercial Paiting
-    order: 3100
-    <!-- parent: Projects -->
+  key: Commercial Paiting
+  order: 3100
+  <!-- parent: Projects -->
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/painting.css" />
+{% endblock %} {% block body %}
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/painting.css">
-{% endblock %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-{% block body %}
+<section id="int-hero">
+  <h1 id="home-h">Commercial Painting</h1>
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/inner-banner.jpg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/inner-banner.jpg"
+    />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/inner-banner.jpg"
+      alt="kitchen cabinets"
+      loading="eager"
+      width="2500"
+      height="1667"
+    />
+  </picture>
+</section>
 
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
-
-    <section id="int-hero">
-        <h1 id="home-h">Commercial Painting</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/inner-banner.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/inner-banner.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/inner-banner.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
-
-       <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/about-img2.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/about-img2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/about-img2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/about-img1.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/about-img1.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/about-img1.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">PAINTING</span>
-                <h2 class="cs-title">COMMERCIAL</h2>
-                <p class="cs-text">
-                    At Firstcall Painting, we understand the distinct demands of commercial painting and decorating projects. Our skilled team is dedicated to delivering exceptional results that meet the high expectations of businesses, property managers, and building owners.
-                </p>
-                <p class="cs-text">
-                    Whether you need to revitalise a retail space, refresh office interiors, or upgrade the appearance of an apartment block, we’re here to help.
-
-                </p>
-               
-            </div>
-        </div>
-    </section>
-
-
-
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/about-img2.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/about-img2.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/about-img2.jpg"
+          alt="cabinets"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/about-img1.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/about-img1.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/about-img1.jpg"
+          alt="house"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">PAINTING</span>
+      <h2 class="cs-title">COMMERCIAL</h2>
+      <p class="cs-text">
+        At Firstcall Painting, we understand the distinct demands of commercial
+        painting and decorating projects. Our skilled team is dedicated to
+        delivering exceptional results that meet the high expectations of
+        businesses, property managers, and building owners.
+      </p>
+      <p class="cs-text">
+        Whether you need to revitalise a retail space, refresh office interiors,
+        or upgrade the appearance of an apartment block, we’re here to help.
+      </p>
+    </div>
+  </div>
+</section>
 
 <!-- ============================================ -->
 <!--                  Services                    -->
 <!-- ============================================ -->
 
 <section id="services-1667">
-    <div class="cs-container">
-        <div class="cs-image-group">
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/commercial-img-service.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/commercial-img-service.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/commercial-img-service.jpg" alt="people standing" width="605" height="690">
-            </picture>
-            <!--SVG Graphic-->
-            <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-swirl.svg" alt="graphic" loading="lazy" decoding="async" height="710" aria-hidden="true" width="690">
-        </div>
-        <div class="cs-content">
-            <span class="cs-topper">Our Services</span>
-            <h2 class="cs-title">At Firstcall Painting</h2>
-            <p class="cs-text">
-                our experienced professionals are committed to delivering top-quality results. We use premium materials and advanced techniques to ensure a flawless finish, no matter the size or scope of the project.
-            </p>
-            <ul class="cs-faq-group">
-                <li class="cs-faq-item active">
-                    <button class="cs-button">
-                        <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 48c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16h80V400c0-26.5 21.5-48 48-48s48 21.5 48 48v64h80c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64zM0 64C0 28.7 28.7 0 64 0H320c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm88 40c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V104zM232 88h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V104c0-8.8 7.2-16 16-16zM88 232c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V232zm144-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V232c0-8.8 7.2-16 16-16z"/></svg>
-                        <span class="cs-button-text">
-                            Expertise in Commercial Painting
-                        </span>
-                        <span class="cs-indicator" aria-hidden="true"></span>
-                    </button>
-                    <div class="cs-item-p">
-                        <p class="cs-text">We’ve successfully completed a wide range of commercial projects, from small boutique shops to expansive corporate offices. With a deep understanding of the unique needs of commercial spaces, we work with a variety of materials, including:</p>
-                        <ul class="inner-accordion-list-points">
-                            <li class="cs-text">Acrylic paints</li>
-                            <li class="cs-text">Epoxy coatings</li>
-                            <li class="cs-text">Polyurethane finishes</li>
-                            <li class="cs-text">Specialised coatings for industrial applications</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M192 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 384V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V192h56 64 16c17.7 0 32-14.3 32-32s-14.3-32-32-32H384V64H576V256H384V224H320v48c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H368c-26.5 0-48 21.5-48 48v80H243.1 177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L120 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32z"/></svg>
-                        <span class="cs-button-text">
-                            Fast and Efficient Service
-                        </span>
-                        <span class="cs-indicator" aria-hidden="true"></span>
-                    </button>
-                    <div class="cs-item-p">
-                        <p class="cs-text">We know how important it is to minimise disruption to your business. Our team works swiftly and efficiently, completing your project on time while maintaining the highest standards of quality.
-                        </p>
-                        
-                    </div>
-                </li>
-                
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <svg  class="cs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M162.4 6c-1.5-3.6-5-6-8.9-6h-19c-3.9 0-7.5 2.4-8.9 6L104.9 57.7c-3.2 8-14.6 8-17.8 0L66.4 6c-1.5-3.6-5-6-8.9-6H48C21.5 0 0 21.5 0 48V224v22.4V256H9.6 374.4 384v-9.6V224 48c0-26.5-21.5-48-48-48H230.5c-3.9 0-7.5 2.4-8.9 6L200.9 57.7c-3.2 8-14.6 8-17.8 0L162.4 6zM0 288v32c0 35.3 28.7 64 64 64h64v64c0 35.3 28.7 64 64 64s64-28.7 64-64V384h64c35.3 0 64-28.7 64-64V288H0zM192 432a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"/></svg>
-                        <span class="cs-button-text">
-                            Commercial Painting Services
-                        </span>
-                        <span class="cs-indicator" aria-hidden="true"></span>
-                    </button>
-                    <div class="cs-item-p">
-                        <p class="cs-text">Our commercial painting services cover a variety of needs, including:</p>
-                        <h3 class="cs-topper">Interior painting</h3>
-                        <p class="cs-text">From walls and ceilings to trim and moulding, we provide a smooth, high-quality finish that meets your specific requirements.</p>
-                        <h3 class="cs-topper">Exterior painting</h3>
-                        <p class="cs-text">We offer durable, weather-resistant coatings to protect your building’s exterior, ensuring it can withstand the elements while looking its best.</p>
-                        <h3 class="cs-topper">Specialised coatings</h3>
-                        <p class="cs-text">We provide specialised coatings designed for high-traffic areas, industrial environments, and spaces exposed to moisture, ensuring longevity and durability.</p>
-
-
-                        
-                    </div>
-                </li>
-            </ul>
-            <!-- <a href="" class="cs-button-solid">View All Courses</a> -->
-        </div>
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/interior-service-img12.webp"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/interior-service-img12.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/interior-service-img12.webp"
+          alt="people standing"
+          width="605"
+          height="690"
+        />
+      </picture>
+      <!--SVG Graphic-->
+      <img
+        class="cs-floater"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-swirl.svg"
+        alt="graphic"
+        loading="lazy"
+        decoding="async"
+        height="710"
+        aria-hidden="true"
+        width="690"
+      />
     </div>
+    <div class="cs-content">
+      <span class="cs-topper">Our Services</span>
+      <h2 class="cs-title">At Firstcall Painting</h2>
+      <p class="cs-text">
+        our experienced professionals are committed to delivering top-quality
+        results. We use premium materials and advanced techniques to ensure a
+        flawless finish, no matter the size or scope of the project.
+      </p>
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <svg
+              class="cs-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M64 48c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16h80V400c0-26.5 21.5-48 48-48s48 21.5 48 48v64h80c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64zM0 64C0 28.7 28.7 0 64 0H320c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm88 40c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V104zM232 88h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V104c0-8.8 7.2-16 16-16zM88 232c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V232zm144-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V232c0-8.8 7.2-16 16-16z"
+              />
+            </svg>
+            <span class="cs-button-text">
+              Expertise in Commercial Painting
+            </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <div class="cs-item-p">
+            <p class="cs-text">
+              We’ve successfully completed a wide range of commercial projects,
+              from small boutique shops to expansive corporate offices. With a
+              deep understanding of the unique needs of commercial spaces, we
+              work with a variety of materials, including:
+            </p>
+            <ul class="inner-accordion-list-points">
+              <li class="cs-text">Acrylic paints</li>
+              <li class="cs-text">Epoxy coatings</li>
+              <li class="cs-text">Polyurethane finishes</li>
+              <li class="cs-text">
+                Specialised coatings for industrial applications
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <svg
+              class="cs-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+            >
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M192 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 384V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V192h56 64 16c17.7 0 32-14.3 32-32s-14.3-32-32-32H384V64H576V256H384V224H320v48c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H368c-26.5 0-48 21.5-48 48v80H243.1 177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L120 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32z"
+              />
+            </svg>
+            <span class="cs-button-text"> Fast and Efficient Service </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <div class="cs-item-p">
+            <p class="cs-text">
+              We know how important it is to minimise disruption to your
+              business. Our team works swiftly and efficiently, completing your
+              project on time while maintaining the highest standards of
+              quality.
+            </p>
+          </div>
+        </li>
+
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <svg
+              class="cs-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M162.4 6c-1.5-3.6-5-6-8.9-6h-19c-3.9 0-7.5 2.4-8.9 6L104.9 57.7c-3.2 8-14.6 8-17.8 0L66.4 6c-1.5-3.6-5-6-8.9-6H48C21.5 0 0 21.5 0 48V224v22.4V256H9.6 374.4 384v-9.6V224 48c0-26.5-21.5-48-48-48H230.5c-3.9 0-7.5 2.4-8.9 6L200.9 57.7c-3.2 8-14.6 8-17.8 0L162.4 6zM0 288v32c0 35.3 28.7 64 64 64h64v64c0 35.3 28.7 64 64 64s64-28.7 64-64V384h64c35.3 0 64-28.7 64-64V288H0zM192 432a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"
+              />
+            </svg>
+            <span class="cs-button-text"> Commercial Painting Services </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <div class="cs-item-p">
+            <p class="cs-text">
+              Our commercial painting services cover a variety of needs,
+              including:
+            </p>
+            <h3 class="cs-topper">Interior painting</h3>
+            <p class="cs-text">
+              From walls and ceilings to trim and moulding, we provide a smooth,
+              high-quality finish that meets your specific requirements.
+            </p>
+            <h3 class="cs-topper">Exterior painting</h3>
+            <p class="cs-text">
+              We offer durable, weather-resistant coatings to protect your
+              building’s exterior, ensuring it can withstand the elements while
+              looking its best.
+            </p>
+            <h3 class="cs-topper">Specialised coatings</h3>
+            <p class="cs-text">
+              We provide specialised coatings designed for high-traffic areas,
+              industrial environments, and spaces exposed to moisture, ensuring
+              longevity and durability.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <!-- <a href="" class="cs-button-solid">View All Courses</a> -->
+    </div>
+  </div>
 </section>
-                                
-
-
-                                
 
 <!-- ============================================ -->
 <!--                  Why Choose                  -->
 <!-- ============================================ -->
 
 <section id="why-choose-37">
-    <div class="cs-container">
-        <!-- Right Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/why-choose.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/why-choose.jpg">
-            <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/why-choose.jpg" alt="Why Choose Firstcall Painting" width="858" height="781">
-        </picture>
-        <div class="cs-content">
-            <!-- <span class="cs-topper">Why Choose Us</span> -->
-            <h2 class="cs-title">Why Choose <br>Firstcall Painting?</h2>
-            <p class="cs-text">
-                At Firstcall Painting, we take pride in our meticulous attention to detail, dedication to quality, and our ability to complete projects on time and within budget. We are fully insured, and all of our work is backed by a guarantee for your peace of mind.
-            </p>
-            <p class="cs-text">Whether you’re updating a single room or an entire building, our commercial painting services are tailored to meet your specific needs.
-            </p>
-            
-            
-            <a href="https://firstcallpainting.co.uk/contact" class="cs-button-solid">Request A Quote Today</a>
-        </div>
+  <div class="cs-container">
+    <!-- Right Image -->
+    <picture class="cs-picture">
+      <source
+        media="(max-width: 600px)"
+        srcset="/assets/images/why-choose.jpg"
+      />
+      <source
+        media="(min-width: 601px)"
+        srcset="/assets/images/why-choose.jpg"
+      />
+      <img
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        src="/assets/images/why-choose.jpg"
+        alt="Why Choose Firstcall Painting"
+        width="858"
+        height="781"
+      />
+    </picture>
+    <div class="cs-content">
+      <!-- <span class="cs-topper">Why Choose Us</span> -->
+      <h2 class="cs-title">Why Choose <br />Firstcall Painting?</h2>
+      <p class="cs-text">
+        At Firstcall Painting, we take pride in our meticulous attention to
+        detail, dedication to quality, and our ability to complete projects on
+        time and within budget. We are fully insured, and all of our work is
+        backed by a guarantee for your peace of mind.
+      </p>
+      <p class="cs-text">
+        Whether you’re updating a single room or an entire building, our
+        commercial painting services are tailored to meet your specific needs.
+      </p>
+
+      <a href="https://firstcallpainting.co.uk/contact" class="cs-button-solid"
+        >Request A Quote Today</a
+      >
     </div>
+  </div>
 </section>
 
 <!-- ============================================ -->
@@ -199,110 +319,109 @@ eleventyNavigation:
             <img class="cs-logo" src="/assets/images/coat-logo.png" alt="logo" width="150" height="65" loading="lazy" decoding="async">
             <img class="cs-logo" src="/assets/images/lg-paint.svg" alt="logo" width="150" height="55" loading="lazy" decoding="async">
             <img class="cs-logo" src="/assets/images/crown-paint.svg" alt="logo" width="150" height="53" loading="lazy" decoding="async">
-            <img class="cs-logo" src="/assets/images/dulux.png" alt="logo" width="150" height="61" loading="lazy" decoding="async">            
-            <img class="cs-logo" src="/assets/images/farrow.png" alt="logo" width="150" height="55" loading="lazy" decoding="async">            
+            <img class="cs-logo" src="/assets/images/dulux.png" alt="logo" width="150" height="61" loading="lazy" decoding="async">
+            <img class="cs-logo" src="/assets/images/farrow.png" alt="logo" width="150" height="55" loading="lazy" decoding="async">
         </div>
     </div>
 </section> -->
 
 <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
 
-  
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Dimitri and Daniel completed a first rate redecoration in very quick time to a very high standard. They efficient, were tidy and a pleasure to work with and would definitely use them again.
+<section id="reviews">
+  <div class="cs-container">
+    <span class="cs-topper">Our Reviews</span>
+    <h2 class="cs-title">Words From Our Customers</h2>
+    <p class="cs-text">
+      Dimitri and Daniel completed a first rate redecoration in very quick time
+      to a very high standard. They efficient, were tidy and a pleasure to work
+      with and would definitely use them again.
+    </p>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-p">
+          Dmtri was fantastic, very reasonable price and very quick. Excellent
+          job, can’t fault at all. Even came back to do something extra at no
+          additional cost and to double check everything was completed. Would
+          absolutely recommend.
+        </p>
+        <span class="cs-reviewer">
+          Aisling Ballagh
 
+          <span class="cs-desc">Homeowner</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-p">
+          Dmitri has completed painting our house in Chelsea. We are extremely
+          pleased with his work and the finish result looks spot on. Dumitru
+          kept us informed during the process and has always been polite and
+          respectful. He looked after our property and kept it clean and tidy
+          during the works. We have planned more work for Dmitri in the next few
+          months. I would definitely recommend him to others
+        </p>
+        <span class="cs-reviewer">
+          Robert Hale
 
-            </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dmtri was fantastic, very reasonable price and very quick. Excellent job, can’t fault at all. Even came back to do something extra at no additional cost and to double check everything was completed. Would absolutely recommend.
-
-
-                    </p>
-                    <span class="cs-reviewer">
-                        Aisling Ballagh
-
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dmitri has completed painting our house in Chelsea. We are extremely pleased with his work and the finish result looks spot on. Dumitru kept us informed during the process and has always been polite and respectful. He looked after our property and kept it clean and tidy during the works. We have planned more work for Dmitri in the next few months. I would definitely recommend him to others
-
-
-                    </p>
-                    <span class="cs-reviewer">
-                        Robert Hale
-
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-            </ul>
-            <!-- <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a> -->
-        </div>
-    </section>                
-            
+          <span class="cs-desc">Homeowner</span>
+        </span>
+        <img
+          class="cs-item-stars"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+          alt="stars"
+          width="96"
+          height="16"
+        />
+      </li>
+    </ul>
+    <!-- <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a> -->
+  </div>
+</section>
 
 <script>
-
-    
-const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-        for (const item of faqItems) {
-            const onClick = () => {
-            item.classList.toggle('active')
-        }
-        item.addEventListener('click', onClick)
-        }
-                                
+  const faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
+  for (const item of faqItems) {
+    const onClick = () => {
+      item.classList.toggle("active");
+    };
+    item.addEventListener("click", onClick);
+  }
 </script>
-                                
-                                
 
-    {% include 'components/cta.html' %}
-
-{% endblock %}
+{% include 'components/cta.html' %} {% endblock %}
