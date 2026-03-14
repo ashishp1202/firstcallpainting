@@ -212,7 +212,12 @@
     height: 87%;
   }
   #hero-1618 .cs-background:before {
-    background: linear-gradient(90deg, #111926 21.41%, rgba(17, 25, 38, 0.72) 34.98%, rgba(17, 25, 38, 0) 62.53%);
+    background: linear-gradient(
+      90deg,
+      #111926 21.41%,
+      rgba(17, 25, 38, 0.72) 34.98%,
+      rgba(17, 25, 38, 0) 62.53%
+    );
     opacity: 1;
   }
 }
@@ -392,7 +397,8 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #sbs .cs-left:before, body.dark-mode #sbs .cs-left:after {
+  body.dark-mode #sbs .cs-left:before,
+  body.dark-mode #sbs .cs-left:after {
     background: var(--accent);
   }
   body.dark-mode #sbs .cs-picture2 {
@@ -557,7 +563,8 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #sbs-r .cs-left:before, body.dark-mode #sbs-r .cs-left:after {
+  body.dark-mode #sbs-r .cs-left:before,
+  body.dark-mode #sbs-r .cs-left:after {
     background: var(--accent);
   }
   body.dark-mode #sbs-r .cs-picture2 {
@@ -712,6 +719,136 @@
 }
 
 #reviews .cs-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-- -------------------------- -->
+<---          Our partner           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #our-partner {
+    padding: var(--sectionPadding);
+    /* Centers the button */
+    text-align: center;
+  }
+  #our-partner .cs-container {
+    margin: auto;
+    max-width: 69rem;
+    width: 100%;
+  }
+  #our-partner .cs-topper {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #our-partner .cs-title {
+    max-width: 43.75rem;
+    text-align: center;
+  }
+  #our-partner .cs-text {
+    /* 88px - 104px */
+    margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
+    max-width: 40.625rem;
+    text-align: center;
+  }
+  #our-partner .cs-card-group {
+    /* 48px - 64px */
+    margin: 0 auto clamp(3rem, 5vw, 4rem);
+    padding: 0;
+  }
+  #our-partner .cs-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.25rem;
+    margin: 0 auto 4rem;
+    background: #fff;
+    max-width: 33.875rem;
+    width: 100%;
+    /* Prevents padding from affecting height & width */
+    box-sizing: border-box;
+    /* Padding L & R - 16px - 32px */
+    padding: 3.75rem clamp(1rem, 3.2vw, 2rem) 0;
+    /* 32px - 40px */
+    padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
+    list-style: none;
+    text-align: left;
+    box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
+  }
+  #our-partner .cs-item:last-of-type {
+    margin-bottom: 0;
+  }
+  #our-partner .cs-item-img {
+    position: absolute;
+    top: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+  }
+  #our-partner .cs-item-p {
+    border-bottom: 1px solid #e8e9ec;
+    margin: 0 0 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+  }
+  #our-partner .cs-reviewer {
+    display: block;
+    margin: 0 auto 0 0;
+    width: 40%;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: var(--headerColor);
+  }
+  #our-partner .cs-desc {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(#353535);
+  }
+  #our-partner .cs-item-stars {
+    height: 1rem;
+    width: 6rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #our-partner .cs-card-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  #our-partner .cs-item {
+    /* reset margin so it won't interfere with flexbox */
+    margin: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #our-partner .cs-title,
+  body.dark-mode #our-partner .cs-text,
+  body.dark-mode #our-partner .cs-item-p,
+  body.dark-mode #our-partner .cs-reviewer {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #our-partner .cs-item {
+    background: var(--medium);
+  }
+  body.dark-mode #our-partner .cs-desc {
+    color: var(--primaryLight);
+  }
+}
+#our-partner .cs-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#our-partner .cs-text {
   margin-left: auto;
   margin-right: auto;
 }
